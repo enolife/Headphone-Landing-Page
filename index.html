@@ -5,15 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav></nav>
+
+    <nav>
+        <ul class="left-menu">
+            <li class="round-logo"></li>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Products</li>
+            </a>
+            <a href="#">
+                <li>Services</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Pages<i class="fas fa-caret-down"></i></li>
+            </a>
+        </ul>
+        <ul class="right-menu">
+            <a href="#">
+                <li><i class="fas fa-cart-plus"></i></li>
+            </a>
+            <a href="#">
+                <li>Login</li>
+            </a>
+            <a href="#">
+                <li>Signup</li>
+            </a>
+        </ul>
+    </nav>
+
     <section class="main-content">
-        <div></div>
-        <div></div>
+        <div class="product-text_cont">
+            <h1>A Beat of Exellence</h1>
+            <p>Morbi leo tortor fermentum sed orci vitae, tempor auctor turpis Fusce bibendum accumsan fringilla Nulla
+                aliquam luctus sem, at posuere nibh lobortis et.</p>
+        </div>
+
+        <div class="product-image_cont">
+            <span class="price-cont">
+                <div class="price">
+                    <i>$99.9</i>
+                </div>
+                <div class="step-icon">
+                    <i class="fas fa-step-forward white-circle"></i>
+                </div>
+            </span>
+            <a class="btn cart-btn btn-padding" href="#"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+        </div>
+
+        <div class="bottom-btn_right">
+            <a class="btn" href="#">Explore</a>
+        </div>
+        <div class="bottom-btn_left">
+            <a class="btn" href="#">Checkout</a>
+            <a class="btn keep-shopping" href="#">Keep Shopping <i class="fas fa-step-forward red-circle"></i></a>
+        </div>
     </section>
+
 </body>
 
 </html>

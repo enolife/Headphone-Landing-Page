@@ -10,6 +10,196 @@ html {
 }
 
 body {
+    font-family: 'Heebo', sans-serif;
     margin: 0;
-    background: #b4242e;
+    background: url("https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/a_30,o_19/v1586904134/Beats_Headphone-bg.png"), url("https://res.cloudinary.com/dvhndpbun/image/upload/v1587032222/Red_headphone_bg.svg");
+    background-position: left center, right -4px;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, scroll;
+    background-color: #8d021f;
+    background-size: 105vh, 70vw 90vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    padding: 5px 50px;
+    background: #fff;
+    box-shadow: 0px 7px 15px -7px rgba(0, 0, 0, 0.79);
+    color: #8d021f;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    width: -moz-fit-content;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background: #110d40;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    color: #fff;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+}
+
+.round-logo {
+    background: transparent;
+    border: 7px solid #000;
+    border-radius: 100vh;
+    height: 10px;
+    width: 10px;
+}
+
+.left-menu {
+    flex: 1;
+    align-items: center;
+}
+
+.right-menu {
+    margin-right: 100px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 65vh 20vh;
+    max-width: 90%;
+    gap: 5px;
+    margin: auto;
+}
+
+.product-text_cont {
+    display: grid;
+    align-content: center;
+}
+
+.product-text_cont h1 {
+    color: #fff;
+    font-size: 6vw;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.product-text_cont p {
+    max-width: 60%;
+    font-weight: 500;
+}
+
+.product-image_cont {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    position: relative;
+}
+
+.price-cont {
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    display: grid;
+    grid-template-columns: 90px 70px;
+    grid-template-rows: 80px 65px;
+    grid-template-areas: "price ."". icon";
+}
+
+.price {
+    grid-area: price;
+}
+
+.price i {
+    padding: 18px 7px;
+    background: #fff;
+    color: #8d021f;
+    border-radius: 100vh;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.price i:hover {
+    background: linear-gradient(to right, #140d6b 50%, #d82345);
+    box-shadow: 0px 0px 3px 4px #bec3e0;
+    color: #fff;
+}
+
+.step-icon {
+    display: grid;
+    grid-area: icon;
+    align-items: end;
+    justify-items: right;
+}
+
+.price-cont p {
+    grid-area: price;
+}
+
+.cart-btn {
+    padding: 3px 15px;
+    position: absolute;
+    right: 20px;
+}
+
+.bottom-btn_right,
+.bottom-btn_left {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.bottom-btn_left {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.bottom-btn_left a {
+    margin-right: 20px;
+}
+
+.red-circle {
+    background: #ac0e30;
+    display: inline-block;
+    color: #fff;
+    border-radius: 100vh;
+    box-shadow: 0px 0px 2px 1px #b1b1b1;
+    padding: 0.5em 0.55em;
+    font-size: .7rem;
+}
+
+.btn:hover .red-circle {
+    background: #fff;
+    color: #000;
+}
+
+.white-circle {
+    background: #fff;
+    display: inline-block;
+    color: #ac0e30;
+    border-radius: 100vh;
+    box-shadow: 0px 0px 2px 1px #b1b1b1;
+    padding: 0.7em 0.75em;
+    font-size: .7rem;
+}
+
+.keep-shopping {
+    padding: 5px 20px;
 }
